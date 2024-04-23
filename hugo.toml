@@ -1,0 +1,70 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Sunf'
+theme = "anubis2"
+paginate = 3
+
+disqusShortname = ""
+
+[author]
+name = "Sunf"
+
+[params]
+author = "Sunf"
+description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+
+colorTheme = "auto"
+colorThemeSwitcher = true
+
+readMore = false
+readNextPosts = 2
+copyCodeButton = true
+rssAsSocialIcon = true
+locale = "en-us"
+mathjax = false
+toc = true
+
+[[params.social]]
+id = "docs"
+url = "https://gohugo.io/documentation/"
+
+[[params.social]]
+id = "github"
+url = "https://github.com/Junyi-99/hugo-theme-anubis2"
+
+[[params.social]]
+id = "linkedin"
+url = "https://www.linkedin.com/"
+
+[[params.social]]
+id = "email"
+url = "example@example.com"
+
+[languages.en]
+languageName = "English"
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 3
+
+[[menu.main]]
+name = "Archive"
+identifier = "archive"
+url = "/posts/"
+weight = 4
