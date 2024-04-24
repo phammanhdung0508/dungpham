@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://dungpham.vercel.app/'
 languageCode = 'en-us'
 title = 'Sunf'
 theme = "anubis2"
