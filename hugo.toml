@@ -28,11 +28,11 @@ toc = true
 
 [[params.social]]
 id = "docs"
-url = "https://gohugo.io/documentation/"
+url = "https://drive.google.com/file/d/1ybLJxhj6NzHha3o2t5lUncJSp-x8mfcf/view"
 
 [[params.social]]
 id = "github"
-url = "https://github.com/Junyi-99/hugo-theme-anubis2"
+url = "https://github.com/sunflower-cmd"
 
 [[params.social]]
 id = "linkedin"
@@ -40,7 +40,7 @@ url = "https://www.linkedin.com/"
 
 [[params.social]]
 id = "email"
-url = "example@example.com"
+url = "mailto:phammanhdung05@gmail.com"
 
 [languages.en]
 languageName = "English"
@@ -58,13 +58,13 @@ url = "/about/"
 weight = 2
 
 [[menu.main]]
+name = "Experience"
+identifier = "Experience"
+url = "/experience/"
+weight = 4
+
+[[menu.main]]
 identifier = "tags"
 name = "Tags"
 url = "/tags/"
 weight = 3
-
-[[menu.main]]
-name = "Archive"
-identifier = "archive"
-url = "/posts/"
-weight = 4
