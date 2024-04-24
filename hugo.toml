@@ -11,11 +11,11 @@ name = "Sunf"
 
 [params]
 author = "Sunf"
-description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
-dateFormat = "2006-01-02"
+description = ""
+dateFormat = ""
 paginationSinglePost = true
 
-colorTheme = "auto"
+colorTheme = "light"
 colorThemeSwitcher = true
 
 readMore = false

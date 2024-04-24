@@ -12,7 +12,7 @@
 
 <title>Categories - Sunf</title>
 
-<meta name="description" content="Anubis2 is another simple minimalist theme for Hugo blog engine.">
+<meta name="description" content="">
 
 
 
@@ -194,7 +194,7 @@
 
     <script>
         const STORAGE_KEY = 'user-color-scheme'
-        const defaultTheme = "auto"
+        const defaultTheme = "light"
 
         let currentTheme
         let switchButton
@@ -240,7 +240,7 @@
             if (defaultTheme) {
                 return defaultTheme
             }
-            return window.matchMedia('(prefers-color-scheme: light)').matches ? 'dark' : 'light';
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
 
         function showContent() {

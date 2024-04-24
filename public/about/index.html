@@ -193,7 +193,7 @@
 
     <script>
         const STORAGE_KEY = 'user-color-scheme'
-        const defaultTheme = "auto"
+        const defaultTheme = "light"
 
         let currentTheme
         let switchButton
@@ -239,7 +239,7 @@
             if (defaultTheme) {
                 return defaultTheme
             }
-            return window.matchMedia('(prefers-color-scheme: light)').matches ? 'dark' : 'light';
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
 
         function showContent() {
@@ -417,8 +417,6 @@
             </header>
             
 
-    
-
 
 
 <div class="post-info noselect">
@@ -480,7 +478,7 @@
 </script>
 
         <div class="content e-content">
-            <p><img alt="Me" src="../static/me_small.jpg"></p>
+            <p><img alt="Me" src="http://localhost:1313/me_small.jpg"></p>
 <p>Hi there! I&rsquo;m <strong>Dung Pham</strong>, currently live in <strong>District 5, Ho Chi Minh City, Vietnam</strong>.</p>
 <p>I recently graduated from <strong>FPT University</strong> in Ho Chi Minh City with a degree in <strong>Software Engineering</strong>. During my time at university, I interned at <strong>FPT Software</strong> for four months.</p>
 <p>My passion lies in developing back-end applications and delving into product development. It&rsquo;s been a fulfilling journey over the years.</p>

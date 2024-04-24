@@ -7,7 +7,7 @@ author = 'Hugo Authors'
 +++
 
 <!--more-->
-![Me](../static/me_small.jpg)
+![Me](http://dungpham.vercel.app/me_small.jpg)
 
 Hi there! I'm **Dung Pham**, currently live in **District 5, Ho Chi Minh City, Vietnam**.
 

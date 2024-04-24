@@ -17,7 +17,7 @@
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://dungpham.vercel.app/about/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Me&#34; src=&#34;../static/me_small.jpg&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img alt=&#34;Me&#34; src=&#34;http://localhost:1313/me_small.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Hi there! I&amp;rsquo;m &lt;strong&gt;Dung Pham&lt;/strong&gt;, currently live in &lt;strong&gt;District 5, Ho Chi Minh City, Vietnam&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;I recently graduated from &lt;strong&gt;FPT University&lt;/strong&gt; in Ho Chi Minh City with a degree in &lt;strong&gt;Software Engineering&lt;/strong&gt;. During my time at university, I interned at &lt;strong&gt;FPT Software&lt;/strong&gt; for four months.&lt;/p&gt;
 &lt;p&gt;My passion lies in developing back-end applications and delving into product development. It&amp;rsquo;s been a fulfilling journey over the years.&lt;/p&gt;
