@@ -239,7 +239,7 @@
             if (defaultTheme) {
                 return defaultTheme
             }
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            return window.matchMedia('(prefers-color-scheme: light)').matches ? 'dark' : 'light';
         }
 
         function showContent() {
