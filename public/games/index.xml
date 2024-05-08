@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Games on Sunf</title>
+    <link>http://localhost:1313/games/</link>
+    <description>Sunf (Games)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+    <atom:link href="http://localhost:1313/games/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/games/ttt/tictactoe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/games/ttt/tictactoe/</guid>
+      <description>&lt;style&gt;
+    .ttt-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ttt-title {
+        margin: 0;
+    }
+
+    .board {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 5px;
+        margin: 20px auto;
+    }
+
+    .cell {
+        width: 100px;
+        height: 100px;
+        background-color: #eee;
+        display: flex;
+        font-size: 40px;
+        cursor: pointer;
+        color: black;
+    }
+
+    #restartButton {
+        font-size: 16px;
+        width: fit-content;
+        padding: 10px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+&lt;/style&gt;
+
+&lt;body&gt;
+    &lt;div class=&#34;ttt-container&#34;&gt;
+        &lt;h1 class=&#34;ttt-title&#34;&gt;Tic Tac Toe&lt;/h1&gt;
+        &lt;div id=&#34;board&#34; class=&#34;board&#34;&gt;
+            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;0&#34; data-j=&#34;0&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;0&#34; data-j=&#34;1&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;0&#34; data-j=&#34;2&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;1&#34; data-j=&#34;0&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;1&#34; data-j=&#34;1&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;1&#34; data-j=&#34;2&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;2&#34; data-j=&#34;0&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;2&#34; data-j=&#34;1&#34;&gt;&lt;/div&gt;
+            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;2&#34; data-j=&#34;2&#34;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button id=&#34;restartButton&#34;&gt;Restart&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;script&gt;
+    const cells = document.querySelectorAll(&#39;[data-cell]&#39;);
+    const player = &#39;X&#39;;
+    const bot = &#39;O&#39;;
+    let board = [
+        [&#39;&#39;, &#39;&#39;, &#39;&#39;],
+        [&#39;&#39;, &#39;&#39;, &#39;&#39;],
+        [&#39;&#39;, &#39;&#39;, &#39;&#39;]];
+    let botwin = 0, playerwin = 0;
+    let isOver = false;
+
+    function over() {
+        console.log(board);
+        for (let i = 0; i &lt; board.length; i++) {
+            // row
+            if (board[i][0] != &#39;&#39; &amp;&amp;
+                board[i][0] == board[i][1] &amp;&amp;
+                board[i][1] == board[i][2]) {
+                console.log(board[0][0]);
+                console.log(board[0][1]);
+                console.log(board[0][2]);
+                console.log(board[1][0]);
+                console.log(board[1][1]);
+                console.log(board[1][2]);
+                console.log(board[2][0]);
+                console.log(board[2][1]);
+                console.log(board[2][2]);
+                console.log(&#34;win row here&#34;);
+                isOver = true;
+                return board[i][0];
+            }
+            // column
+            if (board[0][i] != &#39;&#39; &amp;&amp;
+                board[0][i] == board[1][i] &amp;&amp;
+                board[1][i] == board[2][i]) {
+                console.log(&#34;win col here&#34;);
+                isOver = true;
+                return board[0][i];
+            }
+        }
+
+        // cross
+        if (board[0][0] != &#39;&#39; &amp;&amp;
+            board[0][0] == board[1][1] &amp;&amp;
+            board[1][1] == board[2][2]) {
+            isOver = true;
+            return board[0][0];
+        }
+        if (board[0][2] != &#39;&#39; &amp;&amp;
+            board[0][2] == board[1][1] &amp;&amp;
+            board[1][1] == board[2][0]) {
+            isOver = true;
+            return board[0][2];
+        }
+
+        //full
+        for (let i = 0; i &lt; board.length; i++) {
+            for (let j = 0; j &lt; board[i].length; j++) {
+                if (board[i][j] == &#39;&#39;) {
+                    isOver = false;
+                    return &#39;&#39;;
+                }
+            }
+        }
+        isOver = true;
+        return &#39;&#39;;
+    }
+
+    function move() {
+        let bestScore = -Infinity;
+        let bestI = -1, bestJ = -1;
+
+        for (let i = 0; i &lt; board.length; i++) {
+            for (let j = 0; j &lt; board[i].length; j++) {
+                if (board[i][j] == &#39;&#39;) {
+                    console.log(i, j);
+                    board[i][j] = bot;
+                    let score = minimax(board, 0, false);
+                    console.log(score);
+                    board[i][j] = &#39;&#39;;
+                    if (score &gt; bestScore) {
+                        bestScore = score;
+
+                        bestI = i;
+                        bestJ = j;
+                    }
+                }
+            }
+        }
+        console.log(bestI, bestJ);
+        console.log(&#34;&#34;);
+        console.log(&#34;&#34;);
+        console.log(&#34;&#34;);
+        console.log(&#34;&#34;);
+        console.log(&#34;&#34;);
+        board[bestI][bestJ] = bot;
+        setValue(bestI, bestJ, bot);
+    }
+
+    let score = {
+        player: 1,
+        bot: -1,
+        default: 0
+    }
+
+    function minimax(board, depth, isMaxmizing) {
+        let winner = over();
+        console.log(board, depth, isMaxmizing);
+        console.log(winner);
+        if (winner != &#39;&#39;) {
+            return score[winner];
+        }
+
+        console.log(board, depth, isMaxmizing);
+
+        // if (isMaxmizing) {
+        //     let bestSocre = -Infinity;
+        //     for (let i = 0; i &lt; board.length; i++) {
+        //         for (let j = 0; j &lt; board[i].length; j++) {
+        //             if (board[i][j] == &#39;&#39;) {
+        //                 board[i][j] = bot;
+        //                 let score = minimax(board, depth + 1, false);
+        //                 board[i][j] = &#39;&#39;;
+        //                 bestSocre = Math.max(score, bestSocre);
+        //             }
+        //         }
+        //     }
+        //     return bestSocre;
+        // } else {
+        //     let bestSocre = Infinity;
+        //     for (let i = 0; i &lt; board.length; i++) {
+        //         for (let j = 0; j &lt; board[i].length; j++) {
+        //             if (board[i][j] == &#39;&#39;) {
+        //                 board[i][j] = player;
+        //                 let score = minimax(board, depth + 1, true);
+        //                 board[i][j] = &#39;&#39;;
+        //                 bestSocre = Math.min(score, bestSocre);
+        //             }
+        //         }
+        //     }
+        //     return bestSocre;
+        // }
+        return 0;
+    }
+
+    function end(winner) {
+        console.log(winner);
+        if (winner == bot) {
+            bwin++;
+            alert(`${bot} wins!`);
+        }
+        else if (winner == player) {
+            pwin++;
+            alert(`${player} wins!`);
+        }
+        else {
+            alert(`draw!`);
+        }
+    }
+
+    function play(e) {
+        winner = over();
+        if (isOver) {
+            end(winner);
+        } else {
+            const cell = e.target;
+            cell.textContent = player;
+
+            const i = parseInt(this.getAttribute(&#39;data-i&#39;));
+            const j = parseInt(this.getAttribute(&#39;data-j&#39;));
+
+            board[i][j] = player;
+
+            console.log(board);
+
+            //bot move
+            move();
+        }
+    }
+
+    function setValue(i, j, value) {
+        const cell = document.querySelector(`[data-cell][data-i=&#34;${i}&#34;][data-j=&#34;${j}&#34;]`);
+        if (cell) {
+            cell.textContent = value;
+        }
+    }
+
+    cells.forEach(cell =&gt; {
+        cell.addEventListener(&#39;click&#39;, play);
+    });
+&lt;/script&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

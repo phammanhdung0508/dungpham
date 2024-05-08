@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emoji on Sunf</title>
+    <link>http://localhost:1313/tags/emoji/</link>
+    <description>Sunf (Emoji)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate>
+    
+    <atom:link href="http://localhost:1313/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>first-post</title>
+      <link>http://localhost:1313/posts/firstpost/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/firstpost/</guid>
+      <description>&lt;h2 id=&#34;fpt-software&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#fpt-software&#34;&gt;
+        #
+    &lt;/a&gt;
+    FPT Software
+&lt;/div&gt;
+&lt;/h2&gt;&lt;p&gt;FPT Software is considered one of the largest software services companies in Vietnam. During my 4-month internship, I assisted in managing and developing a Human Resource Management system (using Rest API and the .NET framework).&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
