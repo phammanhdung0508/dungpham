@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sunf</title>
-    <link>http://localhost:1313/</link>
+    <link>https://dungpham.vercel.app/</link>
     <description>Sunf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate>
     
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dungpham.vercel.app/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://dungpham.vercel.app/about/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://dungpham.vercel.app/about/</guid>
       <description>&lt;p&gt;&lt;img alt=&#34;Me&#34; src=&#34;http://dungpham.vercel.app/me_small.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Hi there! I&amp;rsquo;m &lt;strong&gt;Dung Pham&lt;/strong&gt;, currently live in &lt;strong&gt;District 5, Ho Chi Minh City, Vietnam&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;I recently graduated from &lt;strong&gt;FPT University&lt;/strong&gt; in Ho Chi Minh City with a degree in &lt;strong&gt;Software Engineering&lt;/strong&gt;. During my time at university, I interned at &lt;strong&gt;FPT Software&lt;/strong&gt; for four months.&lt;/p&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>Experience</title>
-      <link>http://localhost:1313/experience/</link>
+      <link>https://dungpham.vercel.app/experience/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/experience/</guid>
+      <guid>https://dungpham.vercel.app/experience/</guid>
       <description>&lt;h2 id=&#34;fpt-software&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#fpt-software&#34;&gt;
@@ -55,10 +55,10 @@
     
     <item>
       <title>first-post</title>
-      <link>http://localhost:1313/posts/firstpost/</link>
+      <link>https://dungpham.vercel.app/posts/firstpost/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/firstpost/</guid>
+      <guid>https://dungpham.vercel.app/posts/firstpost/</guid>
       <description>&lt;h2 id=&#34;fpt-software&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#fpt-software&#34;&gt;
@@ -71,10 +71,10 @@
     
     <item>
       <title>Tic Tac Toe</title>
-      <link>http://localhost:1313/posts/tictactoe/</link>
+      <link>https://dungpham.vercel.app/posts/tictactoe/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/tictactoe/</guid>
+      <guid>https://dungpham.vercel.app/posts/tictactoe/</guid>
       <description>&lt;h2 id=&#34;tic-tac-toe&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#tic-tac-toe&#34;&gt;
@@ -88,10 +88,10 @@
     
     <item>
       <title></title>
-      <link>http://localhost:1313/games/ttt/tictactoe/</link>
+      <link>https://dungpham.vercel.app/games/ttt/tictactoe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/games/ttt/tictactoe/</guid>
+      <guid>https://dungpham.vercel.app/games/ttt/tictactoe/</guid>
       <description>&lt;style&gt;
     .ttt-container {
         display: flex;

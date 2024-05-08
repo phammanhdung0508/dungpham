@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://dungpham.vercel.app/about/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/emoji/</loc>
+    <loc>https://dungpham.vercel.app/tags/emoji/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/experience/</loc>
+    <loc>https://dungpham.vercel.app/experience/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/firstpost/</loc>
+    <loc>https://dungpham.vercel.app/posts/firstpost/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/minimax-theory/</loc>
+    <loc>https://dungpham.vercel.app/tags/minimax-theory/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://dungpham.vercel.app/posts/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://dungpham.vercel.app/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://dungpham.vercel.app/tags/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/tictactoe/</loc>
+    <loc>https://dungpham.vercel.app/posts/tictactoe/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/games/ttt/tictactoe/</loc>
+    <loc>https://dungpham.vercel.app/games/ttt/tictactoe/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://dungpham.vercel.app/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/games/</loc>
+    <loc>https://dungpham.vercel.app/games/</loc>
   </url>
 </urlset>
