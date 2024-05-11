@@ -1,0 +1,114 @@
+.ttt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ttt-title {
+    font-size: 100px;
+    margin-top: 0;
+}
+
+.board {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: auto auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    color: black;
+}
+
+.restartButton {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.restartButton:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.restartButton:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.restartButton:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+/* Điều chỉnh responsive cho các ô */
+@media screen and (max-width: 600px) {
+    .cell {
+        width: 50px;
+        /* Ví dụ làm nhỏ ô xuống */
+        padding-top: 50px;
+        /* Giảm chiều cao của ô để vẫn giữ nguyên hình vuông */
+        font-size: 25px;
+        /* Giảm kích thước font để vừa với ô nhỏ hơn */
+    }
+}
+
+/* Điều chỉnh responsive cho .ttt-container */
+@media screen and (max-width: 600px) {
+    .ttt-container {
+        padding: 0 10px;
+        /* Ví dụ điều chỉnh padding cho thiết bị có màn hình nhỏ hơn */
+    }
+}
+
+/* Điều chỉnh responsive cho .board */
+@media screen and (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(2, 100px);
+        /* Ví dụ giảm số cột khi màn hình nhỏ hơn */
+    }
+}
+
+/* Điều chỉnh responsive cho .restartButton */
+@media screen and (max-width: 600px) {
+    .restartButton {
+        font-size: 14px;
+        /* Ví dụ giảm kích thước font cho màn hình nhỏ hơn */
+    }
+}

@@ -6,10 +6,303 @@
     <description>Sunf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2024 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://dungpham.vercel.app/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://dungpham.vercel.app/labs/</link>
+      <pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dungpham.vercel.app/labs/</guid>
+      <description>&lt;h2 id=&#34;tic-tac-toe-game-playhttpsdungphamvercelapplabsttttictactoe-go-to-code&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#tic-tac-toe-game-playhttpsdungphamvercelapplabsttttictactoe-go-to-code&#34;&gt;
+        #
+    &lt;/a&gt;
+    Tic-tac-toe Game (&lt;a href=&#34;https://dungpham.vercel.app/labs/ttt/tictactoe/&#34;&gt;Play!&lt;/a&gt;, Go to &lt;a href=&#34;https://dungpham.vercel.app/&#34;&gt;code&lt;/a&gt;)
+&lt;/div&gt;
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;This is a game&lt;/li&gt;
+&lt;li&gt;This is .&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Markdown Cheat Sheet</title>
+      <link>https://dungpham.vercel.app/posts/markdown/</link>
+      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dungpham.vercel.app/posts/markdown/</guid>
+      <description>&lt;h1 id=&#34;markdown-cheat-sheet&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#markdown-cheat-sheet&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Markdown Cheat Sheet
+&lt;/div&gt;
+&lt;/h1&gt;&lt;p&gt;This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for &lt;a href=&#34;https://www.markdownguide.org/basic-syntax/&#34;&gt;basic syntax&lt;/a&gt; and &lt;a href=&#34;https://www.markdownguide.org/extended-syntax/&#34;&gt;extended syntax&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks for visiting &lt;a href=&#34;https://www.markdownguide.org&#34;&gt;The Markdown Guide&lt;/a&gt;!&lt;/p&gt;
+&lt;h2 id=&#34;basic-syntax&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#basic-syntax&#34;&gt;
+        #
+    &lt;/a&gt;
+    Basic Syntax
+&lt;/div&gt;
+&lt;/h2&gt;&lt;p&gt;These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.&lt;/p&gt;
+&lt;h3 id=&#34;heading&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#heading&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Heading
+&lt;/div&gt;
+&lt;/h3&gt;&lt;h1 id=&#34;h1&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#h1&#34;&gt;
+        ##
+    &lt;/a&gt;
+    H1
+&lt;/div&gt;
+&lt;/h1&gt;&lt;h2 id=&#34;h2&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#h2&#34;&gt;
+        #
+    &lt;/a&gt;
+    H2
+&lt;/div&gt;
+&lt;/h2&gt;&lt;h3 id=&#34;h3&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#h3&#34;&gt;
+        ##
+    &lt;/a&gt;
+    H3
+&lt;/div&gt;
+&lt;/h3&gt;&lt;h3 id=&#34;bold&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#bold&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Bold
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;bold text&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;italic&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#italic&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Italic
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;em&gt;italicized text&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;blockquote&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#blockquote&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Blockquote
+&lt;/div&gt;
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;blockquote&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;ordered-list&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#ordered-list&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Ordered List
+&lt;/div&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;unordered-list&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#unordered-list&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Unordered List
+&lt;/div&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;code&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#code&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Code
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;horizontal-rule&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#horizontal-rule&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Horizontal Rule
+&lt;/div&gt;
+&lt;/h3&gt;&lt;hr&gt;
+&lt;h3 id=&#34;link&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#link&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Link
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://www.markdownguide.org&#34;&gt;Markdown Guide&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;image&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#image&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Image
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://www.markdownguide.org/assets/images/tux.png&#34;&gt;alt text&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;extended-syntax&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#extended-syntax&#34;&gt;
+        #
+    &lt;/a&gt;
+    Extended Syntax
+&lt;/div&gt;
+&lt;/h2&gt;&lt;p&gt;These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.&lt;/p&gt;
+&lt;h3 id=&#34;table&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#table&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Table
+&lt;/div&gt;
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Syntax&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Header&lt;/td&gt;
+&lt;td&gt;Title&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Paragraph&lt;/td&gt;
+&lt;td&gt;Text&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;fenced-code-block&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#fenced-code-block&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Fenced Code Block
+&lt;/div&gt;
+&lt;/h3&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
+  &amp;#34;firstName&amp;#34;: &amp;#34;John&amp;#34;,
+  &amp;#34;lastName&amp;#34;: &amp;#34;Smith&amp;#34;,
+  &amp;#34;age&amp;#34;: 25
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;footnote&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#footnote&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Footnote
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;Here&amp;rsquo;s a sentence with a footnote. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h3 id=&#34;heading-id&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#heading-id&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Heading ID
+&lt;/div&gt;
+&lt;/h3&gt;&lt;h3 id=&#34;custom-id&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#custom-id&#34;&gt;
+        ##
+    &lt;/a&gt;
+    My Great Heading
+&lt;/div&gt;
+&lt;/h3&gt;&lt;h3 id=&#34;definition-list&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#definition-list&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Definition List
+&lt;/div&gt;
+&lt;/h3&gt;&lt;dl&gt;
+&lt;dt&gt;term&lt;/dt&gt;
+&lt;dd&gt;definition&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h3 id=&#34;strikethrough&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#strikethrough&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Strikethrough
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;del&gt;The world is flat.&lt;/del&gt;&lt;/p&gt;
+&lt;h3 id=&#34;task-list&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#task-list&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Task List
+&lt;/div&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write the press release&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Update the website&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Contact the media&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;emoji&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#emoji&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Emoji
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;That is so funny! :joy:&lt;/p&gt;
+&lt;p&gt;(See also &lt;a href=&#34;https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji&#34;&gt;Copying and Pasting Emoji&lt;/a&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;highlight&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#highlight&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Highlight
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;I need to highlight these ==very important words==.&lt;/p&gt;
+&lt;h3 id=&#34;subscript&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#subscript&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Subscript
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;H~2~O&lt;/p&gt;
+&lt;h3 id=&#34;superscript&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#superscript&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Superscript
+&lt;/div&gt;
+&lt;/h3&gt;&lt;p&gt;X^2^&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;This is the footnote.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>About</title>
@@ -18,22 +311,23 @@
       
       <guid>https://dungpham.vercel.app/about/</guid>
       <description>&lt;p&gt;&lt;img alt=&#34;Me&#34; src=&#34;http://dungpham.vercel.app/me_small.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Hi there! I&amp;rsquo;m &lt;strong&gt;Dung Pham&lt;/strong&gt;, currently live in &lt;strong&gt;District 5, Ho Chi Minh City, Vietnam&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;I recently graduated from &lt;strong&gt;FPT University&lt;/strong&gt; in Ho Chi Minh City with a degree in &lt;strong&gt;Software Engineering&lt;/strong&gt;. During my time at university, I interned at &lt;strong&gt;FPT Software&lt;/strong&gt; for four months.&lt;/p&gt;
+&lt;p&gt;Hi there! I&amp;rsquo;m &lt;strong&gt;Dung Pham&lt;/strong&gt;, I currently live in &lt;strong&gt;District 5, Ho Chi Minh City, Vietnam&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I recently graduated from &lt;strong&gt;FPT University&lt;/strong&gt; in Ho Chi Minh City with a degree in &lt;strong&gt;Software Engineering&lt;/strong&gt;. During my time at university, I have learned a lot about programming, and I completed a four-month internship at &lt;strong&gt;FPT Software&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;My passion lies in developing back-end applications and learning into product development.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;I decided to start this blog as a way to challenge myself, document my understanding, and enhance my knowledge along the way.&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;contact-me&#34; &gt;
+&lt;h2 id=&#34;contact-me-here&#34; &gt;
 &lt;div&gt;
-    &lt;a href=&#34;#contact-me&#34;&gt;
+    &lt;a href=&#34;#contact-me-here&#34;&gt;
         #
     &lt;/a&gt;
-    &lt;strong&gt;Contact Me&lt;/strong&gt;
+    &lt;strong&gt;Contact Me Here:&lt;/strong&gt;
 &lt;/div&gt;
 &lt;/h2&gt;&lt;p&gt;You can find me at:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;mailto:phammanhdung05@gmail.com&#34;&gt;Email&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/sunflower-cmd&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://drive.google.com/file/d/1ybLJxhj6NzHha3o2t5lUncJSp-x8mfcf/view&#34;&gt;Resume&lt;/a&gt; (Learn more about me here!)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://drive.google.com/file/d/1C6LEVTRaqqhOuudkPDWcK82wMdR9IhXY/view?usp=sharing&#34;&gt;Resume&lt;/a&gt; (Learn more about me here!)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://drive.google.com/file/d/1-2Oag85ptI1KZGKjwnk49lhH2LMoZ9t9/view?usp=sharing&#34;&gt;Hồ sơ&lt;/a&gt; (Bản tiếng việt.)&lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
     
@@ -54,44 +348,34 @@
     </item>
     
     <item>
-      <title>first-post</title>
-      <link>https://dungpham.vercel.app/posts/firstpost/</link>
-      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://dungpham.vercel.app/posts/firstpost/</guid>
-      <description>&lt;h2 id=&#34;fpt-software&#34; &gt;
-&lt;div&gt;
-    &lt;a href=&#34;#fpt-software&#34;&gt;
-        #
-    &lt;/a&gt;
-    FPT Software
-&lt;/div&gt;
-&lt;/h2&gt;&lt;p&gt;FPT Software is considered one of the largest software services companies in Vietnam. During my 4-month internship, I assisted in managing and developing a Human Resource Management system (using Rest API and the .NET framework).&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Tic Tac Toe</title>
       <link>https://dungpham.vercel.app/posts/tictactoe/</link>
       <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
       
       <guid>https://dungpham.vercel.app/posts/tictactoe/</guid>
-      <description>&lt;h2 id=&#34;tic-tac-toe&#34; &gt;
+      <description>&lt;h2 id=&#34;tictactoe-and-the-minimax-algorithms&#34; &gt;
 &lt;div&gt;
-    &lt;a href=&#34;#tic-tac-toe&#34;&gt;
+    &lt;a href=&#34;#tictactoe-and-the-minimax-algorithms&#34;&gt;
         #
     &lt;/a&gt;
-    Tic Tac Toe
+    TicTacToe and the Minimax algorithms
 &lt;/div&gt;
-&lt;/h2&gt;&lt;p&gt;Minimax is a strategy of always minimizing the maximum possible loss which can result from a choice that a player makes.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://dungpham.vercel.app/games/ttt/tictactoe/&#34;&gt;Web play!&lt;/a&gt;&lt;/p&gt;</description>
+&lt;/h2&gt;&lt;p&gt;Thời gian gần đây với những khoảng thời gian rảnh rỗi mình sẽ thường tìm tòi và học thêm một số thứ mới trong lĩnh vực kỹ sư phần mềm. Tình cờ thay mình có học được một số kiến thức về lập trình động (dynamic programing), và áp dụng nó vào một trò chơi đơn giản là tic-tac-toe.&lt;/p&gt;
+&lt;p&gt;Mình khá là khó khăn để có thể hiểu hết được các khái niệm về &amp;lsquo;dynamic programming&amp;rsquo; và tự làm một trò chơi cho riêng mình, ngoài kia đã có một số bài viết khá hay về khái niệm minimax trong dynamic programming, và nó khá là khó hiểu với một đứa mới tiếp cận như mình. Vì vậy, mình mong bài viết này sẽ giúp các bạn hiểu rõ hơn.&lt;/p&gt;
+&lt;p&gt;Trước khi bắt đầu thì chúng ta cần làm rõ hai khái niệm đó là &amp;lsquo;dynamic programming&amp;rsquo; và &amp;lsquo;recursion&amp;rsquo;:
+Đầu tiền, &amp;lsquo;dynamic programming&amp;rsquo; là kỹ thuạt giải quyết vấn đề bằng cách lưu trữ một số trạng thái kết quả giúp thuật toán hoạt động hiệu quả hơn.&lt;/p&gt;
+&lt;p&gt;Thứ hai, đệ quy &amp;lsquo;recursion&amp;rsquo; hiểu đơn giản là một function gọi lại chính nó cho đến khi thỏa mãn một điều kiện nhất định.&lt;/p&gt;
+&lt;p&gt;Ở đây thì mình sẽ làm hai con bot. 1 là bot dễ 2 là bot không thể đánh bại.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dungpham.vercel.app/labs/ttt/tictactoe/&#34;&gt;Web play!&lt;/a&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://dungpham.vercel.app/games/ttt/tictactoe/</link>
+      <link>https://dungpham.vercel.app/labs/ttt/tictactoe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dungpham.vercel.app/games/ttt/tictactoe/</guid>
+      <guid>https://dungpham.vercel.app/labs/ttt/tictactoe/</guid>
       <description>&lt;style&gt;
     .ttt-container {
         display: flex;
@@ -101,75 +385,123 @@
     }
 
     .ttt-title {
-        font-size: 100px;
+        font-size: 2.5vw;
         margin-top: 0;
     }
 
-    .board {
+    .ttt-noti {
+        font-size: 1.5vw;
+        color: var(--font-color);
+    }
+
+    .ttt-board {
         display: grid;
         height: auto;
         grid-template-columns: repeat(3, 100px);
         gap: 10px;
-        margin: auto auto;
     }
 
-    .cell {
+    .ttt-cell {
         width: 100px;
         height: 100px;
-        background-color: #eee;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        background-color: #a1a1a1;
         font-size: 50px;
         cursor: pointer;
-        color: black;
+        color: var(--font-color)
     }
 
-    .restartButton {
-        align-items: center;
-        appearance: none;
-        background-color: #FCFCFD;
-        border-radius: 4px;
-        border-width: 0;
-        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-        box-sizing: border-box;
-        color: #36395A;
-        cursor: pointer;
-        display: inline-flex;
-        font-family: &#34;JetBrains Mono&#34;, monospace;
-        height: 48px;
-        justify-content: center;
-        line-height: 1;
-        list-style: none;
-        overflow: hidden;
-        padding-left: 16px;
-        padding-right: 16px;
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+    .ttt-overlay {
+        position: fixed;
+        padding-top: 100px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .ttt-overlay:target {
+        width: auto;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .ttt-popup {
+        margin: 70px auto;
+        padding: 20px;
+        background: var(--bg-color);
+        border-radius: 5px;
+        width: fit-content;
         position: relative;
-        text-align: left;
+        transition: all 5s ease-in-out;
+    }
+
+    .ttt-popup {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .cancel {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: default;
+    }
+
+    .ttt-button {
+        margin-top: 10px;
+    }
+
+    .ttt-close {
+        display: flex;
+        justify-content: right;
+        transition: all 200ms;
+        font-size: 19px;
+        font-weight: bold;
         text-decoration: none;
-        transition: box-shadow .15s, transform .15s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        white-space: nowrap;
-        will-change: box-shadow, transform;
-        font-size: 18px;
-        margin-top: 20px;
+        color: #333;
     }
 
-    .restartButton:focus {
-        box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    .ttt-popup {
+        max-height: 100%;
+        overflow: auto;
     }
 
-    .restartButton:hover {
-        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-        transform: translateY(-2px);
+    .ttt-box {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0;
     }
 
-    .restartButton:active {
-        box-shadow: #D6D6E7 0 3px 7px inset;
-        transform: translateY(2px);
+    @media screen and (max-width: 700px) {
+        .box {
+            width: 70%;
+        }
+
+        .popup {
+            width: 70%;
+        }
+    }
+
+    /* Điều chỉnh responsive cho các ô */
+    @media screen and (max-width: 600px) {
+        .ttt-cell {
+            width: 50px;
+            /* Ví dụ làm nhỏ ô xuống */
+            padding-top: 50px;
+            /* Giảm chiều cao của ô để vẫn giữ nguyên hình vuông */
+            font-size: 25px;
+            /* Giảm kích thước font để vừa với ô nhỏ hơn */
+        }
     }
 
     /* Điều chỉnh responsive cho .ttt-container */
@@ -180,57 +512,56 @@
         }
     }
 
-    /* Điều chỉnh responsive cho .board */
+    /* Điều chỉnh responsive cho .ttt-board */
     @media screen and (max-width: 600px) {
-        .board {
+        .ttt-board {
             grid-template-columns: repeat(2, 100px);
             /* Ví dụ giảm số cột khi màn hình nhỏ hơn */
-        }
-    }
-
-    /* Điều chỉnh responsive cho .restartButton */
-    @media screen and (max-width: 600px) {
-        .restartButton {
-            font-size: 14px;
-            /* Ví dụ giảm kích thước font cho màn hình nhỏ hơn */
         }
     }
 &lt;/style&gt;
 
 &lt;body&gt;
-    &lt;div class=&#34;ttt-container&#34;&gt;
-        &lt;h1 class=&#34;ttt-title&#34;&gt;Tic Tac Toe&lt;/h1&gt;
-        &lt;div id=&#34;board&#34; class=&#34;board&#34;&gt;
-            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;0&#34; data-j=&#34;0&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;0&#34; data-j=&#34;1&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;0&#34; data-j=&#34;2&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;1&#34; data-j=&#34;0&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;1&#34; data-j=&#34;1&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;1&#34; data-j=&#34;2&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;2&#34; data-j=&#34;0&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;2&#34; data-j=&#34;1&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;cell&#34; data-cell data-i=&#34;2&#34; data-j=&#34;2&#34;&gt;&lt;/div&gt;
+    &lt;h1 class=&#34;ttt-title&#34;&gt;Tic Tac Toe&lt;/h1&gt;
+    &lt;div class=&#34;pagination ttt-box&#34;&gt;
+        &lt;div class=&#34;ttt-button pagination-item&#34; data-id=&#34;1&#34;&gt;&lt;a href=&#34;#popup-play&#34;&gt;😀 vs 🤖&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div id=&#34;popup-play&#34; class=&#34;ttt-overlay&#34;&gt;
+        &lt;a class=&#34;cancel&#34; href=&#34;#&#34;&gt;&lt;/a&gt;
+        &lt;div class=&#34;ttt-popup&#34;&gt;
+            &lt;a class=&#34;ttt-close&#34; href=&#34;#&#34;&gt;&amp;times;&lt;/a&gt;
+            &lt;div id=&#34;ttt-container&#34; class=&#34;ttt-container&#34;&gt;
+                &lt;div id=&#34;ttt-board&#34; class=&#34;ttt-board&#34;&gt;
+                    &lt;script&gt;
+                        function createCell(rows, cols) {
+                            const board = document.getElementById(&#34;ttt-board&#34;);
+                            for (let i = 0; i &lt; rows; i++) {
+                                for (let j = 0; j &lt; cols; j++) {
+                                    const cell = document.createElement(&#34;div&#34;);
+                                    cell.classList.add(&#34;ttt-cell&#34;);
+                                    cell.setAttribute(&#34;data-cell&#34;, &#34;&#34;);
+                                    cell.setAttribute(&#34;data-i&#34;, i);
+                                    cell.setAttribute(&#34;data-j&#34;, j);
+                                    board.appendChild(cell);
+                                }
+                            }
+                        }
+                        createCell(3, 3);
+                    &lt;/script&gt;
+                &lt;/div&gt;
+                &lt;div class=&#34;pagination-item ttt-button&#34;&gt;&lt;a id=&#34;restartButton&#34;&gt;Play Again! 👻&lt;/a&gt;&lt;/div&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
-        &lt;button id=&#34;restartButton&#34; class=&#34;restartButton&#34;&gt;Restart&lt;/button&gt;
     &lt;/div&gt;
 &lt;/body&gt;
 
 &lt;script&gt;
     const cells = document.querySelectorAll(&#39;[data-cell]&#39;);
-    const player = &#39;X&#39;,
-        bot = &#39;O&#39;;
-    let botwin = 0,
-        playerwin = 0;
+    const board = [[&#39;&#39;, &#39;&#39;, &#39;&#39;], [&#39;&#39;, &#39;&#39;, &#39;&#39;], [&#39;&#39;, &#39;&#39;, &#39;&#39;]];
+    const player = &#34;❌&#34;, bot = &#34;⭕️&#34;;
+    const score = { &#34;❌&#34;: -10, &#34;⭕️&#34;: 10, &#39;draw&#39;: 0 }
     let isOver = false;
-    const board = [
-        [&#39;&#39;, &#39;&#39;, &#39;&#39;],
-        [&#39;&#39;, &#39;&#39;, &#39;&#39;],
-        [&#39;&#39;, &#39;&#39;, &#39;&#39;]];
-    let score = {
-        &#39;X&#39;: -10,
-        &#39;O&#39;: 10,
-        &#39;draw&#39;: 0
-    }
 
     function over() {
         for (let i = 0; i &lt; board.length; i++) {
@@ -274,6 +605,7 @@
                 }
             }
         }
+
         isOver = true;
         return &#39;draw&#39;;
     }
@@ -317,7 +649,10 @@
                 for (let j = 0; j &lt; board[i].length; j++) {
                     if (board[i][j] == &#39;&#39;) {
                         board[i][j] = bot;
-                        let score = minimax(board, depth + 1, false);
+                        let score = minimax(
+                            board,
+                            depth + 1,
+                            false);
                         board[i][j] = &#39;&#39;;
                         bestSocre = Math.max(score, bestSocre);
                     }
@@ -330,7 +665,10 @@
                 for (let j = 0; j &lt; board[i].length; j++) {
                     if (board[i][j] == &#39;&#39;) {
                         board[i][j] = player;
-                        let score = minimax(board, depth + 1, true);
+                        let score = minimax(
+                            board,
+                            depth + 1,
+                            true);
                         board[i][j] = &#39;&#39;;
                         bestSocre = Math.min(score, bestSocre);
                     }
@@ -342,36 +680,44 @@
     }
 
     function play(e) {
-        winner = over();
-        if (isOver) {
-            if (winner == bot) {
-                botwin++;
-                alert(`${bot} wins!`);
-            }
-            else if (winner == player) {
-                playerwin++;
-                alert(`${player} wins!`);
-            }
-            else {
-                alert(`draw!`);
-            }
-        }
-        if (!isOver) {
-            const cell = e.target;
-            cell.textContent = player;
+        if (e.target.textContent == &#39;&#39; &amp;&amp; !isOver) {
+            e.target.textContent = player;
 
-            const i = parseInt(this.getAttribute(&#39;data-i&#39;));
-            const j = parseInt(this.getAttribute(&#39;data-j&#39;));
-
-            board[i][j] = player;
+            board[parseInt(this.getAttribute(&#39;data-i&#39;))]
+            [parseInt(this.getAttribute(&#39;data-j&#39;))] = player;
 
             //bot move
             move();
+
+            winner = over();
+            if (isOver) {
+                switch (winner) {
+                    case bot:
+                        createText(bot);
+                        break;
+                    case player:
+                        createText(player);
+                        break;
+                    case &#39;draw&#39;:
+                        createText(&#39;draw&#39;)
+                        break;
+                }
+            }
         }
     }
 
+    function createText(player) {
+        const container = document.getElementById(&#34;ttt-container&#34;);
+        const noti = document.createElement(&#34;div&#34;);
+        noti.id = &#34;ttt-noti&#34;;
+        noti.classList.add(&#34;ttt-noti&#34;);
+        noti.textContent = player == &#39;draw&#39; ? `Draw 🤝` : `${player} wins!`;
+        container.appendChild(noti);
+    }
+
     function setValue(i, j, value) {
-        const cell = document.querySelector(`[data-cell][data-i=&#34;${i}&#34;][data-j=&#34;${j}&#34;]`);
+        const cell = document.querySelector
+            (`[data-cell][data-i=&#34;${i}&#34;][data-j=&#34;${j}&#34;]`);
         if (cell) {
             cell.textContent = value;
         }
@@ -379,12 +725,14 @@
 
     cells.forEach(cell =&gt; {
         cell.addEventListener(&#39;click&#39;, play);
-    });
+    })
 
     restartButton.addEventListener(&#39;click&#39;, handleRestart = () =&gt; {
         cells.forEach(cell =&gt; {
             cell.textContent = &#39;&#39;;
         });
+        document.getElementById(&#34;ttt-noti&#34;).remove();
+        isOver = false;
         for (let i = 0; i &lt; board.length; i++) {
             for (let j = 0; j &lt; board[i].length; j++) {
                 board[i][j] = &#39;&#39;;

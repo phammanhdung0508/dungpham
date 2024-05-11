@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Sunf</title>
-    <link>https://dungpham.vercel.app/posts/</link>
-    <description>Sunf (Posts)</description>
+    <title>Cheat-Sheet on Sunf</title>
+    <link>https://dungpham.vercel.app/tags/cheat-sheet/</link>
+    <description>Sunf (Cheat-Sheet)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 05 May 2024 00:00:00 +0000</lastBuildDate>
     
-    <atom:link href="https://dungpham.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dungpham.vercel.app/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -283,29 +283,6 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</description>
-    </item>
-    
-    <item>
-      <title>Tic Tac Toe</title>
-      <link>https://dungpham.vercel.app/posts/tictactoe/</link>
-      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://dungpham.vercel.app/posts/tictactoe/</guid>
-      <description>&lt;h2 id=&#34;tictactoe-and-the-minimax-algorithms&#34; &gt;
-&lt;div&gt;
-    &lt;a href=&#34;#tictactoe-and-the-minimax-algorithms&#34;&gt;
-        #
-    &lt;/a&gt;
-    TicTacToe and the Minimax algorithms
-&lt;/div&gt;
-&lt;/h2&gt;&lt;p&gt;Thời gian gần đây với những khoảng thời gian rảnh rỗi mình sẽ thường tìm tòi và học thêm một số thứ mới trong lĩnh vực kỹ sư phần mềm. Tình cờ thay mình có học được một số kiến thức về lập trình động (dynamic programing), và áp dụng nó vào một trò chơi đơn giản là tic-tac-toe.&lt;/p&gt;
-&lt;p&gt;Mình khá là khó khăn để có thể hiểu hết được các khái niệm về &amp;lsquo;dynamic programming&amp;rsquo; và tự làm một trò chơi cho riêng mình, ngoài kia đã có một số bài viết khá hay về khái niệm minimax trong dynamic programming, và nó khá là khó hiểu với một đứa mới tiếp cận như mình. Vì vậy, mình mong bài viết này sẽ giúp các bạn hiểu rõ hơn.&lt;/p&gt;
-&lt;p&gt;Trước khi bắt đầu thì chúng ta cần làm rõ hai khái niệm đó là &amp;lsquo;dynamic programming&amp;rsquo; và &amp;lsquo;recursion&amp;rsquo;:
-Đầu tiền, &amp;lsquo;dynamic programming&amp;rsquo; là kỹ thuạt giải quyết vấn đề bằng cách lưu trữ một số trạng thái kết quả giúp thuật toán hoạt động hiệu quả hơn.&lt;/p&gt;
-&lt;p&gt;Thứ hai, đệ quy &amp;lsquo;recursion&amp;rsquo; hiểu đơn giản là một function gọi lại chính nó cho đến khi thỏa mãn một điều kiện nhất định.&lt;/p&gt;
-&lt;p&gt;Ở đây thì mình sẽ làm hai con bot. 1 là bot dễ 2 là bot không thể đánh bại.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://dungpham.vercel.app/labs/ttt/tictactoe/&#34;&gt;Web play!&lt;/a&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
   </channel>

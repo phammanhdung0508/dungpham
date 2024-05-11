@@ -68,3 +68,9 @@ identifier = "tags"
 name = "Tags"
 url = "/tags/"
 weight = 3
+
+[[menu.main]]
+identifier = "labs"
+name = "Labs"
+url = "/labs/"
+weight = 3

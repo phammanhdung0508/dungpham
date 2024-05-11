@@ -10,9 +10,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer-when-downgrade">
 
-<title>Experience - Sunf</title>
+<title>Sunf</title>
 
-<meta name="description" content="#FPT SoftwareFPT Software is considered one of the largest software services companies in Vietnam. During my 4-month internship, I assisted in managing and developing a Human Resource Management system (using Rest API and the .NET framework).">
+<meta name="description" content="Tic Tac Toe😀 vs 🤖&times;Play Again! 👻">
 
 
 
@@ -414,7 +414,7 @@
     <article class="post h-entry">
         <div class="post-header">
             <header>
-                <h1 class="p-name post-title">Experience</h1>
+                <h1 class="p-name post-title"></h1>
                 
             </header>
             
@@ -423,13 +423,8 @@
 
 <div class="post-info noselect">
     
-        <div class="post-date dt-published">
-            <time datetime="2024-03-25">2024-03-25</time>
-            
-        </div>
-    
 
-    <a class="post-hidden-url u-url" href="https://dungpham.vercel.app/experience/">https://dungpham.vercel.app/experience/</a>
+    <a class="post-hidden-url u-url" href="https://dungpham.vercel.app/labs/ttt/tictactoe/">https://dungpham.vercel.app/labs/ttt/tictactoe/</a>
     <a href="https://dungpham.vercel.app/" class="p-name p-author post-hidden-author h-card" rel="me">Sunf</a>
 
 
@@ -447,16 +442,6 @@
 
 
   
-  
-  
-  <details class="toc noselect">
-    <summary>Table of Contents</summary>
-    <div class="inner"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#fpt-software">FPT Software</a></li>
-  </ul>
-</nav></div>
-  </details>
   
 
 
@@ -480,14 +465,370 @@
 </script>
 
         <div class="content e-content">
-            <h2 id="fpt-software" >
-<div>
-    <a href="#fpt-software">
-        #
-    </a>
-    FPT Software
-</div>
-</h2><p>FPT Software is considered one of the largest software services companies in Vietnam. During my 4-month internship, I assisted in managing and developing a Human Resource Management system (using Rest API and the .NET framework).</p>
+            <style>
+    .ttt-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ttt-title {
+        font-size: 2.5vw;
+        margin-top: 0;
+    }
+
+    .ttt-noti {
+        font-size: 1.5vw;
+        color: var(--font-color);
+    }
+
+    .ttt-board {
+        display: grid;
+        height: auto;
+        grid-template-columns: repeat(3, 100px);
+        gap: 10px;
+    }
+
+    .ttt-cell {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #a1a1a1;
+        font-size: 50px;
+        cursor: pointer;
+        color: var(--font-color)
+    }
+
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+    .ttt-overlay {
+        position: fixed;
+        padding-top: 100px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .ttt-overlay:target {
+        width: auto;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .ttt-popup {
+        margin: 70px auto;
+        padding: 20px;
+        background: var(--bg-color);
+        border-radius: 5px;
+        width: fit-content;
+        position: relative;
+        transition: all 5s ease-in-out;
+    }
+
+    .ttt-popup {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .cancel {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: default;
+    }
+
+    .ttt-button {
+        margin-top: 10px;
+    }
+
+    .ttt-close {
+        display: flex;
+        justify-content: right;
+        transition: all 200ms;
+        font-size: 19px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .ttt-popup {
+        max-height: 100%;
+        overflow: auto;
+    }
+
+    .ttt-box {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 700px) {
+        .box {
+            width: 70%;
+        }
+
+        .popup {
+            width: 70%;
+        }
+    }
+
+    /* Điều chỉnh responsive cho các ô */
+    @media screen and (max-width: 600px) {
+        .ttt-cell {
+            width: 50px;
+            /* Ví dụ làm nhỏ ô xuống */
+            padding-top: 50px;
+            /* Giảm chiều cao của ô để vẫn giữ nguyên hình vuông */
+            font-size: 25px;
+            /* Giảm kích thước font để vừa với ô nhỏ hơn */
+        }
+    }
+
+    /* Điều chỉnh responsive cho .ttt-container */
+    @media screen and (max-width: 600px) {
+        .ttt-container {
+            padding: 0 10px;
+            /* Ví dụ điều chỉnh padding cho thiết bị có màn hình nhỏ hơn */
+        }
+    }
+
+    /* Điều chỉnh responsive cho .ttt-board */
+    @media screen and (max-width: 600px) {
+        .ttt-board {
+            grid-template-columns: repeat(2, 100px);
+            /* Ví dụ giảm số cột khi màn hình nhỏ hơn */
+        }
+    }
+</style>
+
+<body>
+    <h1 class="ttt-title">Tic Tac Toe</h1>
+    <div class="pagination ttt-box">
+        <div class="ttt-button pagination-item" data-id="1"><a href="#popup-play">😀 vs 🤖</a></div>
+    </div>
+
+    <div id="popup-play" class="ttt-overlay">
+        <a class="cancel" href="#"></a>
+        <div class="ttt-popup">
+            <a class="ttt-close" href="#">&times;</a>
+            <div id="ttt-container" class="ttt-container">
+                <div id="ttt-board" class="ttt-board">
+                    <script>
+                        function createCell(rows, cols) {
+                            const board = document.getElementById("ttt-board");
+                            for (let i = 0; i < rows; i++) {
+                                for (let j = 0; j < cols; j++) {
+                                    const cell = document.createElement("div");
+                                    cell.classList.add("ttt-cell");
+                                    cell.setAttribute("data-cell", "");
+                                    cell.setAttribute("data-i", i);
+                                    cell.setAttribute("data-j", j);
+                                    board.appendChild(cell);
+                                }
+                            }
+                        }
+                        createCell(3, 3);
+                    </script>
+                </div>
+                <div class="pagination-item ttt-button"><a id="restartButton">Play Again! 👻</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const cells = document.querySelectorAll('[data-cell]');
+    const board = [['', '', ''], ['', '', ''], ['', '', '']];
+    const player = "❌", bot = "⭕️";
+    const score = { "❌": -10, "⭕️": 10, 'draw': 0 }
+    let isOver = false;
+
+    function over() {
+        for (let i = 0; i < board.length; i++) {
+            // row
+            if (board[i][0] != '' &&
+                board[i][0] == board[i][1] &&
+                board[i][1] == board[i][2]) {
+
+                isOver = true;
+                return board[i][0];
+            }
+            // column
+            if (board[0][i] != '' &&
+                board[0][i] == board[1][i] &&
+                board[1][i] == board[2][i]) {
+                isOver = true;
+                return board[0][i];
+            }
+        }
+
+        // cross
+        if (board[0][0] != '' &&
+            board[0][0] == board[1][1] &&
+            board[1][1] == board[2][2]) {
+            isOver = true;
+            return board[0][0];
+        }
+        if (board[0][2] != '' &&
+            board[0][2] == board[1][1] &&
+            board[1][1] == board[2][0]) {
+            isOver = true;
+            return board[0][2];
+        }
+
+        //full
+        for (let i = 0; i < board.length; i++) {
+            for (let j = 0; j < board[i].length; j++) {
+                if (board[i][j] == '') {
+                    isOver = false;
+                    return '';
+                }
+            }
+        }
+
+        isOver = true;
+        return 'draw';
+    }
+
+    function move() {
+        let bestScore = -Infinity;
+        let bestI = -1, bestJ = -1;
+
+        for (let i = 0; i < board.length; i++) {
+            for (let j = 0; j < board[i].length; j++) {
+                if (board[i][j] == '') {
+                    board[i][j] = bot;
+                    let score = minimax(board, 0, false);
+                    board[i][j] = '';
+                    if (score > bestScore) {
+                        bestScore = score;
+                        bestI = i;
+                        bestJ = j;
+                    }
+                }
+            }
+        }
+
+        if (bestI != -1 &&
+            bestJ != -1) {
+            board[bestI][bestJ] = bot;
+            setValue(bestI, bestJ, bot);
+        }
+    }
+
+    function minimax(board, depth, isMaxmizing) {
+        let winner = over();
+        if (isOver) {
+            let v = score[winner];
+            return v;
+        }
+
+        if (isMaxmizing) {
+            let bestSocre = -Infinity;//Min
+            for (let i = 0; i < board.length; i++) {
+                for (let j = 0; j < board[i].length; j++) {
+                    if (board[i][j] == '') {
+                        board[i][j] = bot;
+                        let score = minimax(
+                            board,
+                            depth + 1,
+                            false);
+                        board[i][j] = '';
+                        bestSocre = Math.max(score, bestSocre);
+                    }
+                }
+            }
+            return bestSocre;
+        } else {
+            let bestSocre = Infinity;//Max
+            for (let i = 0; i < board.length; i++) {
+                for (let j = 0; j < board[i].length; j++) {
+                    if (board[i][j] == '') {
+                        board[i][j] = player;
+                        let score = minimax(
+                            board,
+                            depth + 1,
+                            true);
+                        board[i][j] = '';
+                        bestSocre = Math.min(score, bestSocre);
+                    }
+                }
+            }
+            return bestSocre;
+        }
+        return 0;
+    }
+
+    function play(e) {
+        if (e.target.textContent == '' && !isOver) {
+            e.target.textContent = player;
+
+            board[parseInt(this.getAttribute('data-i'))]
+            [parseInt(this.getAttribute('data-j'))] = player;
+
+            //bot move
+            move();
+
+            winner = over();
+            if (isOver) {
+                switch (winner) {
+                    case bot:
+                        createText(bot);
+                        break;
+                    case player:
+                        createText(player);
+                        break;
+                    case 'draw':
+                        createText('draw')
+                        break;
+                }
+            }
+        }
+    }
+
+    function createText(player) {
+        const container = document.getElementById("ttt-container");
+        const noti = document.createElement("div");
+        noti.id = "ttt-noti";
+        noti.classList.add("ttt-noti");
+        noti.textContent = player == 'draw' ? `Draw 🤝` : `${player} wins!`;
+        container.appendChild(noti);
+    }
+
+    function setValue(i, j, value) {
+        const cell = document.querySelector
+            (`[data-cell][data-i="${i}"][data-j="${j}"]`);
+        if (cell) {
+            cell.textContent = value;
+        }
+    }
+
+    cells.forEach(cell => {
+        cell.addEventListener('click', play);
+    })
+
+    restartButton.addEventListener('click', handleRestart = () => {
+        cells.forEach(cell => {
+            cell.textContent = '';
+        });
+        document.getElementById("ttt-noti").remove();
+        isOver = false;
+        for (let i = 0; i < board.length; i++) {
+            for (let j = 0; j < board[i].length; j++) {
+                board[i][j] = '';
+            }
+        }
+    });
+</script>
         </div>
 
     </article>
@@ -496,6 +837,24 @@
         
         
     
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/experience/">Experience</a>
+            
+        </div>
+        <div class="right pagination-item disabled">
+            
+        </div>
+    </div>
+
+
+
 
     
 

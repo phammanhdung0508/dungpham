@@ -2,37 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dungpham.vercel.app/about/</loc>
-    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
+    <loc>https://dungpham.vercel.app/labs/</loc>
+    <lastmod>2024-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dungpham.vercel.app/tags/emoji/</loc>
+    <loc>https://dungpham.vercel.app/</loc>
+    <lastmod>2024-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dungpham.vercel.app/tags/cheat-sheet/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dungpham.vercel.app/tags/mark-down/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dungpham.vercel.app/posts/markdown/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dungpham.vercel.app/posts/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dungpham.vercel.app/tags/</loc>
+    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dungpham.vercel.app/about/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dungpham.vercel.app/experience/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dungpham.vercel.app/posts/firstpost/</loc>
-    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dungpham.vercel.app/tags/minimax-theory/</loc>
-    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dungpham.vercel.app/posts/</loc>
-    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dungpham.vercel.app/</loc>
-    <lastmod>2024-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dungpham.vercel.app/tags/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dungpham.vercel.app/posts/tictactoe/</loc>
     <lastmod>2024-03-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dungpham.vercel.app/games/ttt/tictactoe/</loc>
+    <loc>https://dungpham.vercel.app/labs/ttt/tictactoe/</loc>
   </url><url>
     <loc>https://dungpham.vercel.app/categories/</loc>
-  </url><url>
-    <loc>https://dungpham.vercel.app/games/</loc>
   </url>
 </urlset>

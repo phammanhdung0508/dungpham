@@ -393,6 +393,8 @@
         
         <a class="" href="https://dungpham.vercel.app/about/" title="">About</a>
         
+        <a class="" href="https://dungpham.vercel.app/labs/" title="">Labs</a>
+        
         <a class="" href="https://dungpham.vercel.app/tags/" title="">Tags</a>
         
         <a class="" href="https://dungpham.vercel.app/experience/" title="">Experience</a>
@@ -458,7 +460,7 @@
     <summary>Table of Contents</summary>
     <div class="inner"><nav id="TableOfContents">
   <ul>
-    <li><a href="#tic-tac-toe">Tic Tac Toe</a></li>
+    <li><a href="#tictactoe-and-the-minimax-algorithms">TicTacToe and the Minimax algorithms</a></li>
   </ul>
 </nav></div>
   </details>
@@ -485,15 +487,21 @@
 </script>
 
         <div class="content e-content">
-            <h2 id="tic-tac-toe" >
+            <h2 id="tictactoe-and-the-minimax-algorithms" >
 <div>
-    <a href="#tic-tac-toe">
+    <a href="#tictactoe-and-the-minimax-algorithms">
         #
     </a>
-    Tic Tac Toe
+    TicTacToe and the Minimax algorithms
 </div>
-</h2><p>Minimax is a strategy of always minimizing the maximum possible loss which can result from a choice that a player makes.</p>
-<p><a href="https://dungpham.vercel.app/games/ttt/tictactoe/">Web play!</a></p>
+</h2><p>Thời gian gần đây với những khoảng thời gian rảnh rỗi mình sẽ thường tìm tòi và học thêm một số thứ mới trong lĩnh vực kỹ sư phần mềm. Tình cờ thay mình có học được một số kiến thức về lập trình động (dynamic programing), và áp dụng nó vào một trò chơi đơn giản là tic-tac-toe.</p>
+<p>Mình khá là khó khăn để có thể hiểu hết được các khái niệm về &lsquo;dynamic programming&rsquo; và tự làm một trò chơi cho riêng mình, ngoài kia đã có một số bài viết khá hay về khái niệm minimax trong dynamic programming, và nó khá là khó hiểu với một đứa mới tiếp cận như mình. Vì vậy, mình mong bài viết này sẽ giúp các bạn hiểu rõ hơn.</p>
+<p>Trước khi bắt đầu thì chúng ta cần làm rõ hai khái niệm đó là &lsquo;dynamic programming&rsquo; và &lsquo;recursion&rsquo;:
+Đầu tiền, &lsquo;dynamic programming&rsquo; là kỹ thuạt giải quyết vấn đề bằng cách lưu trữ một số trạng thái kết quả giúp thuật toán hoạt động hiệu quả hơn.</p>
+<p>Thứ hai, đệ quy &lsquo;recursion&rsquo; hiểu đơn giản là một function gọi lại chính nó cho đến khi thỏa mãn một điều kiện nhất định.</p>
+<p>Ở đây thì mình sẽ làm hai con bot. 1 là bot dễ 2 là bot không thể đánh bại.</p>
+<p><a href="https://dungpham.vercel.app/labs/ttt/tictactoe/">Web play!</a></p>
+<!-- raw HTML omitted -->
         </div>
 
     </article>
@@ -510,7 +518,7 @@
     <div class="pagination post-pagination">
         <div class="left pagination-item ">
             
-                <a href="/posts/firstpost/">first-post</a>
+                <a href="/posts/markdown/">Markdown Cheat Sheet</a>
             
         </div>
         <div class="right pagination-item disabled">
@@ -575,7 +583,7 @@
             let e = document.createElement('div');
             e.setAttribute('class', 'sun')
             document.body.appendChild(e);
-            e.style.left = Math.random() * + innerWidth + 'px';
+            e.style.left = Math.random() * + innerWidth - 100 + 'px';
 
             let size = Math.random() * 12;
             let duration = Math.random() * 3;
