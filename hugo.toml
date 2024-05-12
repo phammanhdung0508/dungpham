@@ -9,6 +9,12 @@ disqusShortname = ""
 [author]
 name = "Sunf"
 
+[markup.goldmark.renderer]
+unsafe = true # Enable unsafe mode to have a better experience
+
+[markup.highlight]
+style = 'base16-snazzy' # Highlight.js style
+
 [params]
 author = "Sunf"
 description = ""
@@ -61,7 +67,7 @@ weight = 2
 name = "Experience"
 identifier = "Experience"
 url = "/experience/"
-weight = 4
+weight = 3
 
 [[menu.main]]
 identifier = "tags"

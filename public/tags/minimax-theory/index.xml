@@ -31,7 +31,9 @@
 &lt;p&gt;Thứ hai, đệ quy &amp;lsquo;recursion&amp;rsquo; hiểu đơn giản là một function gọi lại chính nó cho đến khi thỏa mãn một điều kiện nhất định.&lt;/p&gt;
 &lt;p&gt;Ở đây thì mình sẽ làm hai con bot. 1 là bot dễ 2 là bot không thể đánh bại.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://dungpham.vercel.app/labs/ttt/tictactoe/&#34;&gt;Web play!&lt;/a&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;</description>
+&lt;body&gt;
+&lt;p&gt;abc&lt;/p&gt;
+&lt;/body&gt;</description>
     </item>
     
   </channel>

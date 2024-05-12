@@ -2,23 +2,31 @@
     .ttt-container {
         display: flex;
         flex-direction: column;
+        width: auto;
+    }
+
+    .ttt-header {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        width: 100%;
+        gap: 20px;
     }
 
-    .ttt-title {
-        font-size: 2.5vw;
-        margin-top: 0;
-    }
-
-    .ttt-noti {
-        font-size: 1.5vw;
+    .ttt-select {
         color: var(--font-color);
+        font-size: 17px;
+        background-color: var(--bg-color);
+    }
+
+    .ttt-score {
+        margin: 10px auto;
+        width: fit-content;
     }
 
     .ttt-board {
         display: grid;
         height: auto;
+        justify-content: center;
         grid-template-columns: repeat(3, 100px);
         gap: 10px;
     }
@@ -29,93 +37,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #a1a1a1;
+        background-color: var(--font-color);
         font-size: 50px;
         cursor: pointer;
         color: var(--font-color)
     }
 
-    /*--------------------------------------------------------------------------------------------------------------*/
-
-    .ttt-overlay {
-        position: fixed;
-        padding-top: 100px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.7);
-        transition: opacity 500ms;
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    .ttt-overlay:target {
-        width: auto;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .ttt-popup {
-        margin: 70px auto;
-        padding: 20px;
-        background: var(--bg-color);
-        border-radius: 5px;
-        width: fit-content;
-        position: relative;
-        transition: all 5s ease-in-out;
-    }
-
-    .ttt-popup {
-        margin-top: 0;
-        color: #333;
-    }
-
-    .cancel {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        cursor: default;
-    }
-
     .ttt-button {
-        margin-top: 10px;
-    }
-
-    .ttt-close {
-        display: flex;
-        justify-content: right;
-        transition: all 200ms;
-        font-size: 19px;
-        font-weight: bold;
-        text-decoration: none;
-        color: #333;
-    }
-
-    .ttt-popup {
-        max-height: 100%;
-        overflow: auto;
-    }
-
-    .ttt-box {
-        display: flex;
-        flex-direction: column;
         width: fit-content;
-        margin: 0;
+        margin: 20px auto;
     }
 
-    @media screen and (max-width: 700px) {
-        .box {
-            width: 70%;
-        }
-
-        .popup {
-            width: 70%;
-        }
-    }
-
-    /* Điều chỉnh responsive cho các ô */
     @media screen and (max-width: 600px) {
+
+        /* Điều chỉnh responsive cho các ô */
         .ttt-cell {
             width: 50px;
             /* Ví dụ làm nhỏ ô xuống */
@@ -126,16 +61,18 @@
         }
     }
 
-    /* Điều chỉnh responsive cho .ttt-container */
     @media screen and (max-width: 600px) {
+
+        /* Điều chỉnh responsive cho .ttt-container */
         .ttt-container {
             padding: 0 10px;
             /* Ví dụ điều chỉnh padding cho thiết bị có màn hình nhỏ hơn */
         }
     }
 
-    /* Điều chỉnh responsive cho .ttt-board */
     @media screen and (max-width: 600px) {
+
+        /* Điều chỉnh responsive cho .ttt-board */
         .ttt-board {
             grid-template-columns: repeat(2, 100px);
             /* Ví dụ giảm số cột khi màn hình nhỏ hơn */
@@ -144,37 +81,45 @@
 </style>
 
 <body>
-    <h1 class="ttt-title">Tic Tac Toe</h1>
-    <div class="pagination ttt-box">
-        <div class="ttt-button pagination-item" data-id="1"><a href="#popup-play">😀 vs 🤖</a></div>
-    </div>
-
-    <div id="popup-play" class="ttt-overlay">
-        <a class="cancel" href="#"></a>
-        <div class="ttt-popup">
-            <a class="ttt-close" href="#">&times;</a>
-            <div id="ttt-container" class="ttt-container">
-                <div id="ttt-board" class="ttt-board">
-                    <script>
-                        function createCell(rows, cols) {
-                            const board = document.getElementById("ttt-board");
-                            for (let i = 0; i < rows; i++) {
-                                for (let j = 0; j < cols; j++) {
-                                    const cell = document.createElement("div");
-                                    cell.classList.add("ttt-cell");
-                                    cell.setAttribute("data-cell", "");
-                                    cell.setAttribute("data-i", i);
-                                    cell.setAttribute("data-j", j);
-                                    board.appendChild(cell);
-                                }
-                            }
-                        }
-                        createCell(3, 3);
-                    </script>
-                </div>
-                <div class="pagination-item ttt-button"><a id="restartButton">Play Again! 👻</a></div>
-            </div>
+    <div id="ttt-container" class="ttt-container">
+        <div class="ttt-header">
+            <select id="ttt-select" class="ttt-select pagination-item" onchange="selectOption()">
+                <option value="1">Play with friend! 😜 vs 😒</option>
+                <option value="2">Boring! 🥱 vs 🤖</option>
+                <option value="3" selected="selected">Undefeated! 💀 vs 🤖</option>
+            </select>
+            <script>
+                selectOption();
+                function selectOption() {
+                    var e = document.getElementById("ttt-select");
+                    mode = parseInt(e.value);
+                }
+            </script>
+            <span id="ttt-result" class="ttt-result">Start Game</span>
         </div>
+        <div class="ttt-score pagination-item">
+            <a id="x-score">❌ - 0</a>
+            <span> / </span>
+            <a id="o-score">⭕️ - 0</a>
+        </div>
+        <div id="ttt-board" class="ttt-board">
+            <script>
+                const b = document.getElementById("ttt-board");
+                if (b) {
+                    for (let i = 0; i < 3; i++) {
+                        for (let j = 0; j < 3; j++) {
+                            const cell = document.createElement("div");
+                            cell.classList.add("ttt-cell");
+                            cell.setAttribute("data-cell", "");
+                            cell.setAttribute("data-i", i);
+                            cell.setAttribute("data-j", j);
+                            b.appendChild(cell);
+                        }
+                    }
+                }
+            </script>
+        </div>
+        <div class="ttt-button pagination-item"><a id="restartButton">Play Again! 👻</a></div>
     </div>
 </body>
 
@@ -182,8 +127,11 @@
     const cells = document.querySelectorAll('[data-cell]');
     const board = [['', '', ''], ['', '', ''], ['', '', '']];
     const player = "❌", bot = "⭕️";
-    const score = { "❌": -10, "⭕️": 10, 'draw': 0 }
+    let botWin = 0, playerWin = 0, mode = 3;
+    const score = { "❌": mode === 3 ? -10 : 10, "⭕️": mode === 3 ? 10 : -10, 'draw': 0 }
+
     let isOver = false;
+    let turn = player;
 
     function over() {
         for (let i = 0; i < board.length; i++) {
@@ -235,12 +183,13 @@
     function move() {
         let bestScore = -Infinity;
         let bestI = -1, bestJ = -1;
-
+        console.log("mode in move(): " + mode);
         for (let i = 0; i < board.length; i++) {
             for (let j = 0; j < board[i].length; j++) {
                 if (board[i][j] == '') {
                     board[i][j] = bot;
                     let score = minimax(board, 0, false);
+                    console.log("best score in move(): " + bestScore + " at mode: " + mode)
                     board[i][j] = '';
                     if (score > bestScore) {
                         bestScore = score;
@@ -262,6 +211,13 @@
         let winner = over();
         if (isOver) {
             let v = score[winner];
+            if (mode == 2) {
+                if (winner == bot) {
+                    v = v - depth;
+                } else if (winner == player) {
+                    v = depth - v;
+                }
+            }
             return v;
         }
 
@@ -303,38 +259,67 @@
 
     function play(e) {
         if (e.target.textContent == '' && !isOver) {
-            e.target.textContent = player;
+            e.target.textContent = turn;
 
             board[parseInt(this.getAttribute('data-i'))]
-            [parseInt(this.getAttribute('data-j'))] = player;
+            [parseInt(this.getAttribute('data-j'))] = turn;
 
             //bot move
-            move();
+            switch (mode) {
+                case 1:
+                    turn = (turn === player) ? bot : player;
+                    break;
+                case 2:
+                    move();
+                    break;
+                default:
+                    move();
+                    break;
+            }
 
             winner = over();
             if (isOver) {
                 switch (winner) {
                     case bot:
-                        createText(bot);
+                        botWin++;
+                        updateResult(bot, botWin);
                         break;
                     case player:
-                        createText(player);
+                        playerWin++;
+                        updateResult(player, playerWin);
                         break;
                     case 'draw':
-                        createText('draw')
+                        updateResult('draw')
                         break;
                 }
             }
         }
     }
 
-    function createText(player) {
-        const container = document.getElementById("ttt-container");
-        const noti = document.createElement("div");
-        noti.id = "ttt-noti";
-        noti.classList.add("ttt-noti");
-        noti.textContent = player == 'draw' ? `Draw 🤝` : `${player} wins!`;
-        container.appendChild(noti);
+    cells.forEach(cell => {
+        cell.addEventListener('click', play);
+    })
+
+    function updateResult(player, whoWin) {
+        const result = document.getElementById("ttt-result");
+        if (result) {
+            result.textContent = (player == 'draw') ? `Draw 🤝` : `${player} wins! 🎉🎉🎉`;
+
+            if (whoWin) {
+                let win;
+                switch (player) {
+                    case bot:
+                        win = document.getElementById("o-score");
+                        break;
+                    case player:
+                        win = document.getElementById("x-score");
+                        break;
+                    default:
+                        break;
+                }
+                win.textContent = player + ' - ' + whoWin;
+            }
+        }
     }
 
     function setValue(i, j, value) {
@@ -345,15 +330,11 @@
         }
     }
 
-    cells.forEach(cell => {
-        cell.addEventListener('click', play);
-    })
-
     restartButton.addEventListener('click', handleRestart = () => {
         cells.forEach(cell => {
             cell.textContent = '';
         });
-        document.getElementById("ttt-noti").remove();
+        document.getElementById("ttt-result").textContent = "Start! 🎮🎮🎮";
         isOver = false;
         for (let i = 0; i < board.length; i++) {
             for (let j = 0; j < board[i].length; j++) {
@@ -361,4 +342,5 @@
             }
         }
     });
+
 </script>
